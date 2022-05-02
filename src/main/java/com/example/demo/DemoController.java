@@ -12,4 +12,9 @@ public class DemoController {
     public ResponseEntity<String> hellowWorld() {
         return new ResponseEntity<>("Hello World", HttpStatus.OK);
     }
+
+    @GetMapping("/helloWorld2")
+    public ResponseEntity<String> hellowWorld2() {
+        return new ResponseEntity<>("Hello World 2", HttpStatus.OK);
+    }
 }
